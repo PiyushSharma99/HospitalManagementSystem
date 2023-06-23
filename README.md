@@ -1,4 +1,10 @@
-# Hospital Management System
+# Hospital Management Staff System
+
+Hospital Management Staff System is equipped with functionality to add Patient and their admission details to the system. Along with the functionality of authentication with Spring Security for staffs. In the database their password are secured in an encrypted format with BCryptPasswordEncoder.
+
+Also a close attempt is made to fully cover the edge case scenarios for the problem statement.
+
+I hope you like it ! 
 
 Please follow below steps to run the project:
 
@@ -67,6 +73,13 @@ URL:
 ### Edit Patient Details [PUT]
 URL:
   ```http://localhost:8080/hospital/users/patients/1 ```
+Payload:
+```
+{
+    "patientName": "One Doe",
+    "patientAge": 20
+}
+```
 
 ### Delete Patient [DELETE]
 URL:
@@ -79,6 +92,44 @@ URL:
 ### Discharge Patient [PUT]
 URL:
 ``` http://localhost:8080/hospital/users/patients/2/discharge ```
+
+### Create Patients Admissions [POST]
+URL:
+```http://localhost:8080/hospital/users/patients/3/admissions```
+
+Payload:
+```
+{
+    "assignedDoctor":"DoctorTestB",
+    "patientRoomId":"R2",
+    "expenses":1850000
+}
+```
+
+### Get All Admissions By Patient Id [GET]
+URL:
+```http://localhost:8080/hospital/users/patients/3/admissions```
+
+### Edit Patient Admission Details [PUT]
+URL:
+``` http://localhost:8080/hospital/users/patients/3/admissions/4 ```
+
+Payload:
+```
+{
+    "assignedDoctor":"DoctorTestB",
+    "patientRoomId":"R2",
+    "expenses":1850000
+}
+```
+
+### Delete Patient Admission Details [DELETE]
+
+URL:
+```http://localhost:8080/hospital/users/patients/3/admissions/3```
+
+
+
 
 
 
