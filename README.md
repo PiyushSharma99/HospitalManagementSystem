@@ -54,5 +54,32 @@ URL:
   ```
 
 
+ ### Get All Patients [GET]
+
+URL:
+  ```http://localhost:8080/hospital/users/patients ```
+
+ ### Get Patient By Id  [GET]
+ 
+URL:
+  ```http://localhost:8080/hospital/users/patients/2 ```
+
+### Edit Patient Details [PUT]
+URL:
+  ```http://localhost:8080/hospital/users/patients/1 ```
+
+### Delete Patient [DELETE]
+URL:
+```http://localhost:8080/hospital/users/patients/4```
+
+### All Admitted Patients [GET]
+URL:
+```http://localhost:8080/hospital/users/patients/admit```
+
+### Discharge Patient [PUT]
+URL:
+``` http://localhost:8080/hospital/users/patients/2/discharge ```
+
+
 
 
