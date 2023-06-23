@@ -22,5 +22,5 @@ Please follow below steps to run the project:
     "lastName" :"Karan", 
     "email" :"sam@gmail.com",
     "password": "12345"
-}
+  }
   ```
