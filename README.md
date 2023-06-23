@@ -13,6 +13,7 @@ Please follow below steps to run the project:
 
   ### Register User (Staff) [POST]
 
+URL:
   ```http://localhost:8080/register ```
 
   #### Payload
@@ -24,3 +25,34 @@ Please follow below steps to run the project:
     "password": "12345"
   }
   ```
+Once the user is registered then all the below APIs will be working.
+
+### Important point :
+
+Please add **Authorization** as **Basic Auth** before executing any url.
+
+In Basic Auth , username and password will be asked.
+
+username will be the registered user email id.
+
+password will be same as entered while registering.
+
+
+ ### Create Patient [POST]
+
+URL:
+  ```http://localhost:8080/hospital/users/patients ```
+
+  #### Payload
+  ```
+  {
+    "patientId":1,
+    "patientName": "Patient One",
+    "patientAge": 30,
+    "patientStatus":"Admitted"
+}
+  ```
+
+
+
+
